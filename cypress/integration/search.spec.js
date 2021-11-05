@@ -17,5 +17,7 @@ context("Search", () => {
     });
     cy.get("input").type("81720050");
     cy.get("button").click();
+    cy.contains("Estado");
+    cy.contains("logradouro");
   });
 });
